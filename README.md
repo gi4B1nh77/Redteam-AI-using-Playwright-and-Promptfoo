@@ -430,6 +430,7 @@ After init the set up, it will create promptfooconfig.yaml (this file will act a
 - Name it and choose the type of endpoint:
 
 <img width="975" height="273" alt="image" src="https://github.com/user-attachments/assets/35cac293-e5af-4628-b640-8e4203dfe129" />
+
 - Write a pompt that describe the application which server for what purpose, in my case I will redteam an AI chatbox related to Heatlh Care:
 
 ~~~bash
