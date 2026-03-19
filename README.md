@@ -434,8 +434,11 @@ This application is an AI-powered genetics and healthcare advisory assistant ope
 ~~~
 <img width="975" height="93" alt="image" src="https://github.com/user-attachments/assets/def27ded-f5a6-4557-a48c-7bd4e0164322" />
 - Choose the attach types:
+
 <img width="728" height="264" alt="image" src="https://github.com/user-attachments/assets/e745e53f-f19f-4f1f-9fe6-81817cf8c654" />
+
 - After that the promptfooconfig.yaml file created:
+
 <img width="975" height="283" alt="image" src="https://github.com/user-attachments/assets/baae0e9a-65b0-42d2-83a9-4a95311595c3" />
 ### 3. Intergrate it with Playwright
 - Create a file named redteam-ui.yaml to implement the testing through UI, we will copy the content from promptfooconfig.yaml but change the target look the code bellow:
