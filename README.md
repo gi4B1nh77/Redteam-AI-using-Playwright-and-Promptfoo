@@ -442,7 +442,7 @@ This application is an AI-powered genetics and healthcare advisory assistant ope
 ~~~bash
 
 targets:
-  - id: file://./providers/healthcare-ui.js // Here the path to the file
+  - id: file://./providers/healthcare-ui.js # Here the path to the file
     label: healthcare-agent-ui
     config:
       headless: true
@@ -510,9 +510,40 @@ redteam:
     - jailbreak:composite # Combines multiple jailbreak techniques for enhanced effectiveness
 
 ~~~
+### 4. Evaluating
+~~~bash
+npx promptfoo@latest redteam run -c BeGen/redteam-ui.yaml -j 1 
+~~~
+Using j -1 to run each prompt in one turn, maximum 5
 
+### 5. Web View
+~~~bash
+npx promptfoo@latest view http://localhost:15500
+~~~
+<img width="975" height="374" alt="image" src="https://github.com/user-attachments/assets/b3697ce1-955e-49d0-8ada-1eac255e6f18" />
 
-
+Note: To use full function, we need to forward to our host
+Run this on our host(window or the device that remote to the Promptfoo):
+~~~bash
+ssh -L 15501:127.0.0.1:15500 pentester@172.16.24.42
+~~~
+### Background running
+~~~bash
+tmux promptfoo
+npx promptfoo redteam run -c BeGen/redteam-ui.yaml -j 2
+~~~
+Then 
+Ctrt + B --> %
+Then run:
+~~~bash
+npx promptfoo view
+~~~
+Detach session:
+Ctrl + B --> D
+Return Session:
+~~~bash
+tmux attach -t promptfoo
+~~~
 
 
   
