@@ -1,4 +1,4 @@
-# Redteam-AI-using-Playwright-and-Promptfoo
+# Redteam AI using Promptfoo intergrate with Playwright
 An end-to-end security evaluation framework that simulates real-world adversary behavior. By integrating Promptfoo for automated prompt injection and database management with Playwright for browser-based interaction, the system bypasses traditional API testing to evaluate the AI's safety and robustness directly through the final user interface.
 Reference: https://www.promptfoo.dev/docs/installation/
 
