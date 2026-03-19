@@ -71,11 +71,11 @@ const path = require("path");
 const { chromium } = require("@playwright/test");
 
 // ===================== CONFIG =====================
-const BASE_URL = "You url to the chatbox";
+const BASE_URL = "You URL to the chatbox";
 const CHAT_URL = `${BASE_URL}/chat`;
 
-const MS_EMAIL = process.env.MS_EMAIL || "Enter your email to login chatbox";
-const MS_PASSWORD = process.env.MS_PASSWORD || "Password";
+const MS_EMAIL = process.env.MS_EMAIL || "Enter your MS email to login chatbox";
+const MS_PASSWORD = process.env.MS_PASSWORD || "Your MS Password";
 
 const TIMEOUT_MS = 180000;
 const ANSWER_WAIT_MS = 180000; // you asked 120s
